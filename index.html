@@ -1,229 +1,55 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sarabjit Kaur | Python Developer & Blogger</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mastering OOP with Python - Sarabjit Kaur</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
       color: #333;
+      font-size: 2.5em;
     }
-    header {
-      background-color: #24292e;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #1e293b;
-    }
-    /* Quotes Section */
-    .quote {
-      background: white;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      font-style: italic;
-      font-weight: 500;
-      position: relative;
-    }
-    .quote::before {
-      content: "“";
-      font-size: 3rem;
-      position: absolute;
-      left: 15px;
-      top: 5px;
-      color: #2563eb;
-      font-weight: bold;
-    }
-    .quote::after {
-      content: "”";
-      font-size: 3rem;
-      position: absolute;
-      right: 15px;
-      bottom: 5px;
-      color: #2563eb;
-      font-weight: bold;
-    }
-    .quote-author {
-      margin-top: 0.75rem;
-      font-style: normal;
-      font-weight: 600;
-      text-align: right;
+
+    p {
       color: #555;
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 20px auto;
     }
 
-    /* Blogs Section */
-    .blog-list {
-      display: grid;
-      gap: 1.5rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .blog-list article {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      border: 1px solid #ccc;
-    }
-    .blog-list h3 {
-      margin-top: 0;
-    }
-    .blog-list a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .blog-list a:hover {
-      text-decoration: underline;
-    }
-
-    /* Avatar */
-    .avatar {
-      max-width: 180px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Buttons */
-    .btn {
-      background-color: #2563eb;
+    .download-btn {
+      background-color: #4CAF50;
       color: white;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
+      padding: 14px 24px;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 16px;
+      border-radius: 8px;
       display: inline-block;
-      margin-top: 0.5rem;
-    }
-    .btn:hover {
-      background-color: #1d4ed8;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
     }
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      background-color: #eee;
-      margin-top: 3rem;
+    .download-btn:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1 style="color: #7dd3fc;">Sarabjit Kaur</h1>
-  <p>Python Developer | Blogger | Lifelong Learner</p>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#quotes">Quotes</a>
-    <a href="#blogs">Blog</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <h1>📘 Mastering Object-Oriented Programming with Python</h1>
+  <p>Learn OOP concepts in Python through real-world examples, code snippets, and hands-on mini projects. <br>
+  Authored by <strong>Sarabjit Kaur</strong>.</p>
 
-
-  
-
-  <section id="about">
-    <h2>About Me</h2>
-    
-    <p>Hello! I'm Sarabjit, a Python developer passionate about learning, experimenting with code, and sharing knowledge.</p>
-  </section>
-
-  <section id="quotes">
-    <h2>Quotes I Love</h2>
-    <div class="quote">
-      Life is 10% what happens to us and 90% how we react to it.
-      <div class="quote-author">– Charles R. Swindoll</div>
-    </div>
-    <div class="quote">
-      The only way to do great work is to love what you do.
-      <div class="quote-author">– Steve Jobs</div>
-    </div>
-    <div class="quote">
-      Success is not final, failure is not fatal: It is the courage to continue that counts.
-      <div class="quote-author">– Winston Churchill</div>
-    </div>
-    <div class="quote">
-      Do not watch the clock. Do what it does. Keep going.
-      <div class="quote-author">– Sam Levenson</div>
-    </div>
-  </section>
-
-  <section id="blogs" style="background-color: #f9f9f9;">
-    <h2 style="text-align:center;">My Blogs</h2>
-    <div class="blog-list">
-      <article>
-        <h3>Cultural Heritage and Its Preservation</h3>
-        <p>Exploring how technology helps preserve cultural heritage in the digital era.</p>
-        <a href="https://heritagedigitize.blogspot.com" target="_blank" rel="noopener noreferrer">Read More</a>
-      </article>
-
-      <article>
-        <h3>Protecting Yourself in the Digital Age</h3>
-        <p>Cybersecurity basics everyone should know to stay safe online.</p>
-        <a href="https://sarab-cybersecurity.blogspot.com" target="_blank" rel="noopener noreferrer">Read More</a>
-      </article>
-
-      <article>
-        <h3>Digital Skills</h3>
-        <p>Tips and strategies for building digital literacy and tech confidence.</p>
-        <a href="https://sarabjit09.blogspot.com" target="_blank" rel="noopener noreferrer">Read More</a>
-      </article>
-
-      <article>
-        <h3>Python Programming</h3>
-        <p>Beginner-friendly guides and tutorials for learning Python.</p>
-        <a href="https://sarab-pythondeveloper.blogspot.com" target="_blank" rel="noopener noreferrer">Read More</a>
-      </article>
-
-      <article>
-        <h3>Self-Development</h3>
-        <p>Unlock your potential through mindful self-growth and learning habits.</p>
-        <a href="https://sarab09online.blogspot.com" target="_blank" rel="noopener noreferrer">Read More</a>
-      </article>
-
-      <article>
-        <h3>Emerging Technologies</h3>
-        <p>Latest trends and innovations shaping the future of tech.</p>
-        <a href="https://sarab-emergingtechnologies.blogspot.com" target="_blank" rel="noopener noreferrer">Read More</a>
-      </article>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/sarabjit-kaur-321273325" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Sarabjit Kaur | Built with ❤️ using GitHub Pages
-  </footer>
+  <a href="Mastering-OOP-Python.pdf" class="download-btn" download>
+    Download My Book (PDF)
+  </a>
 
 </body>
 </html>
